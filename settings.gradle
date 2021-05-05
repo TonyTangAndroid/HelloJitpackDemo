@@ -1,3 +1,4 @@
 rootProject.name = "HelloAar"
 include ':app'
 include ':library1'
+include ':library2'
