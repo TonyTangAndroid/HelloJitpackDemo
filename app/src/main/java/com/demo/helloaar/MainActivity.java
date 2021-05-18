@@ -5,6 +5,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import com.demo.library1.HelloLibrary1Util;
 import com.demo.library2.HelloLibrary2Util;
+import io.reactivex.Observable;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,5 +16,6 @@ public class MainActivity extends AppCompatActivity {
     TextView textView = findViewById(R.id.tv_hello);
     textView.setText(HelloLibrary1Util.message("tony"));
     textView.setText(HelloLibrary2Util.message("tony"));
+    Integer test = Observable.just(1).blockingFirst();
   }
 }
