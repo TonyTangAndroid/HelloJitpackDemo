@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.demo.library1.HelloLibrary1Util;
 import com.demo.library2.HelloLibrary2Util;
 import io.reactivex.Observable;
+import retrofit2.Retrofit.Builder;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,5 +18,7 @@ public class MainActivity extends AppCompatActivity {
     textView.setText(HelloLibrary1Util.message("tony"));
     textView.setText(HelloLibrary2Util.message("tony"));
     Integer test = Observable.just(1).blockingFirst();
+    Builder builder = new Builder();
+
   }
 }
