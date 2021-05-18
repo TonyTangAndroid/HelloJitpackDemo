@@ -35,7 +35,6 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
 //    implementation project(path: ':library1')
     implementation 'com.github.TonyTangAndroid.HelloJitpackDemo:library1:1.0'
-    api 'io.reactivex.rxjava2:rxjava:2.2.21'
 //    implementation 'com.github.TonyTangAndroid.HelloJitpackDemo:unified_dependencies:1.1'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
